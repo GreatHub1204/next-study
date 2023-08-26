@@ -1,28 +1,28 @@
 
 
-const Menuitems = [
+const MenuItems = [
     {
-        title:'Access Analysis',
+        title:'ACCESS ANALYSIS',
         href: '/'
     },
     {
-        title:'Client List',
+        title:'CLIENT LIST',
         href: '/clients_list'
     },
     {
-        title:'Sending Email',
+        title:'SENDING EMAIL',
         href: '/send_email'
     },
     {
-        title:'Form Style',
+        title:'FORM STYLE',
         href: '/form_make'
     },
     {
-        title:'PDF Reg',
+        title:'PDF REG',
         href: '/pdf'
     },
     {
-        title:'Redirect',
+        title:'REDIRECT',
         href: '/redirect'
     },
     {
@@ -30,27 +30,27 @@ const Menuitems = [
         href: '/popup'
     },
     {
-        title:'Template Setting',
+        title:'TEMPLATE SETTING',
         href: '/template_setting'
     },
     {
-        title:'Settings',
+        title:'SETTINGS',
         href: '/setting'
     },
     {
-        title:'Affilicate',
+        title:'AFFILICATE',
         href: '/affilicate'
     },
     {
-        title:'Information',
+        title:'INFORMATION',
         href: '/information'
     },
     {
-        title:'LogOut',
+        title:'LOG OUT',
         href: '/logout'
     }
 
 ]
 
 
-export default Menuitems;
+export default MenuItems;

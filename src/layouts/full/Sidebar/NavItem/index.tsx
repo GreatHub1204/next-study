@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 
-type NavGoup = {
+type NavGroup = {
     [x:string]: any;
     title?: string;
     href?: any;
@@ -11,13 +11,13 @@ type NavGoup = {
 }
 
 interface ItemType {
-    item:NavGoup;
+    item:NavGroup;
 }
 
 const NavItem = ({item}:ItemType) => {
     return(
-        <div>
-            <Link href={item.href}>{item.title}</Link>
+        <div className="group mt-3 p-2 w-full hover:bg-[#5D87FF] rounded-[8px]">
+            <Link href={item.href} className="text-sm font-bold text-gray-500  group-hover:text-white">{item.title}</Link>
         </div>        
     )
 }

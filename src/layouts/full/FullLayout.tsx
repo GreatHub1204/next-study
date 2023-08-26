@@ -13,13 +13,16 @@ const FullLayout: React.FC<Props> = ({ children }) => {
     const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
 
     return (
-        <div className="flex">
+        <div className="flex min-h-screen">
             <Sidebar
             // isSidebarOpen={isSidebarOpen} 
             // isMobileSidebarOpen={isMobileSidebarOpen}
             // onSidebarClose={() => setMobileSidebarOpen(false)}
             />
-            {children}
+            <div className="m-10 p-10 rounded-[20px] shadow-[0_7px_30px_-10px_rgba(0,0,0,0.45)] w-screen">
+                {children}
+            </div>
+            
         </div>
 
     )

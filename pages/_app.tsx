@@ -5,6 +5,7 @@ import {CacheProvider, EmotionCache} from "@emotion/react";
 import type { NextPage } from "next";
 import createEmotionCache from "../src/createEmotionCache";
 import '../styles/globals.css';
+import styles from '../styles/style.module.css'
 
 
 
