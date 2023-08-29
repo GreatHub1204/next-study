@@ -1,10 +1,12 @@
 import React from "react";
 import Title from '../shared/Title';
+import SearchingField from "./searching";
 
 const AccessAnalysis = () => {
     return(
         <div>
-            <Title title="Here is the Access Analysis Page"/>
+            <Title title="ACCESS ANALYSIS"/>
+            <SearchingField/>
         </div>
     )
 }

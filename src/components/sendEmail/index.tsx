@@ -6,7 +6,7 @@ import Title from "../shared/Title";
 const SendEmail = () => {
     return(
         <div>
-            <Title title="Sending Email"/>
+            <Title title="SENDING EMAIL"/>
         </div>
     )
 }

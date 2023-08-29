@@ -4,7 +4,7 @@ import Title from "../shared/Title";
 const ClientList = () =>{
     return(
         <div>
-            <Title title="Here is the Client List Page"/>
+            <Title title="CUSTOMER LIST"/>
         </div>
     )
 } 

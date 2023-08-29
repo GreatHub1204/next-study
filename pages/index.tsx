@@ -6,7 +6,7 @@ import FullLayout from "../src/layouts/full/FullLayout";
 
 export default function Page() {
   return (
-    <PageContainer title="Access Analysis" description="this is the access analysis page.">
+    <PageContainer title="Access Analysis" description="ACCESS ANALYSIS">
       <AccessAnalysis />
     </PageContainer>
   );
