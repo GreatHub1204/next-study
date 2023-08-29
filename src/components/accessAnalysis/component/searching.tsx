@@ -1,6 +1,6 @@
 import React from 'react';
-import InputTag from '../shared/InputTag';
-import ButtonTag from '../shared/ButtonTag';
+import InputTag from '../../shared/InputTag';
+import ButtonTag from '../../shared/ButtonTag';
 
 
 
