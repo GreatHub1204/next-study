@@ -1,10 +1,11 @@
 import React from 'react';
 
 interface Props {
-    margin:string;
+    margin?:string;
+    headertitle?:any;
 }
 
-const CommonTable = ({margin}:Props) => {
+const CommonTable = ({margin, headertitle}:Props) => {
     return(
         <div className={`flex flex-col ${margin}`}>
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -13,14 +14,13 @@ const CommonTable = ({margin}:Props) => {
                         <table className="min-w-full text-left text-sm font-light">
                         <thead className="border-b font-medium dark:border-neutral-500">
                             <tr>
-                            <th scope="col" className="px-6 py-4">Access date and time</th>
-                            <th scope="col" className="px-6 py-4">Customer ID</th>
-                            <th scope="col" className="px-6 py-4">Company</th>
-                            <th scope="col" className="px-6 py-4">Division</th>
-                            <th scope="col" className="px-6 py-4">Title</th>
-                            <th scope="col" className="px-6 py-4">Stay time</th>
-                            <th scope="col" className="px-6 py-4">Number of page moves</th>
-                            <th scope="col" className="px-6 py-4">CTA clicks</th>
+                                {
+                                    headertitle?.map((item:string) => {
+                                        return(
+                                            <th scope="col" className="px-6 py-4">{item}</th>            
+                                        )
+                                    })
+                                }                           
                             </tr>
                         </thead>
                         <tbody>

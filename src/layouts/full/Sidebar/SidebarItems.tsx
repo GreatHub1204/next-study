@@ -8,15 +8,14 @@ import NavItem from './NavItem';
 
 
 const SidebarItems = ({toggleMobileSidebar}: any) => {
-    // const {pathname } = useRouter();
-    // const pathDirect = pathname;
+
     const pathname = usePathname();
     return(
         <>
             {
-                MenuItems.map((item)=> {
+                MenuItems.map((item, index)=> {
                     return(
-                        <NavItem item={ item } url={ pathname }/>
+                        <NavItem key={index} item={ item } url={ pathname }/>
                     );
                 })
             }

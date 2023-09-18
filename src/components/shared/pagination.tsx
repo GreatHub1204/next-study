@@ -2,7 +2,7 @@ import React from 'react';
 
 
 interface Props {
-    margin : string;
+    margin?: string;
 }
 
 const Pagination = ({margin}:Props) => {

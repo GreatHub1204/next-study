@@ -5,11 +5,12 @@ import { Interface } from 'readline';
 interface Props  {
     type?: string;
     classvalue?: string;
+    placeholder?:string;
 }
 
-const InputTag = ({type, classvalue}:Props) => {
+const InputTag = ({type, classvalue, placeholder}:Props) => {
     return(
-        <input type={type} className={classvalue}/>
+        <input type={type} className={classvalue} placeholder={placeholder} />
     )
     
 }
